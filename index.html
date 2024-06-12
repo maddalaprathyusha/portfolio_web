@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prathyusha maddala</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+        crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2f123240a9.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+</head>
+<body>
+    <!--   navbar section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home" style="font-family: caveat; font-size:25px">Prathyusha Maddala </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" id="navItem1" href="#home">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" id="navitem2" href="#edu">Education</a>
+                    <a class="nav-link" id="navitem3" href="#pro">Projects</a>
+                    <a class="nav-link" id="navitem4" href="#resume">Resume</a>
+                    <a class="nav-link" id="navitem4" href="#cont">Contact us</a>
+                    <!-- <a class="nav-link" id="navitem5" onclick="myFunction()">Dark Mode</a> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<!--   home page section -->
+<center id="home">
+    <div class="background-image d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
+        <div class="text text-center">
+            <h3>Hello <span><img src="https://arun-kumar-mahanthi.netlify.app/assets/images/Hand.gif" width="35px"></span>, I am </h3>
+            <h2 class="heading">Prathyusha Maddala</h2>
+            <img src="https://arun-kumar-mahanthi.netlify.app/assets/images/dp_male.svg" width="200" height="200" alt="Profile Picture">
+            <h3>I'm  <span class="typing-animation"></span></h3>
+
+<script>
+  const text = ['Software Engineer', '|', 'Analyst'];
+
+  let index = 0;
+  let isDeleting = false;
+  let typingText = document.querySelector('.typing-animation');
+
+  function type() {
+    const currentText = text[index % text.length];
+    const typingSpeed = 200; // Adjust typing speed here
+
+    if (isDeleting) {
+      typingText.textContent = currentText.substring(0, typingText.textContent.length - 1);
+    } else {
+      typingText.textContent = currentText.substring(0, typingText.textContent.length + 1);
+    }
+
+    let delta = typingSpeed;
+
+    if (isDeleting) {
+      delta /= 2;
+    }
+
+    if (!isDeleting && typingText.textContent === currentText) {
+      delta = 1000;
+      isDeleting = true;
+    } else if (isDeleting && typingText.textContent === '') {
+      isDeleting = false;
+      index++;
+      delta = 500;
+    }
+
+    setTimeout(type, delta);
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    type();
+  });
+</script>
+            <div class="socialicons">
+                <a href="https://www.linkedin.com/in/m-prathyusha12" target="_blank"><i class="fa-brands fa-linkedin icon2"></i></a>
+                <a href="https://github.com/maddalaprathyusha" target="_blank"><i class="fa-brands fa-github icon2"></i></a>
+            </div>
+        
+            <!-- Resume Section -->
+                <section id="resume">
+                       <h3 class="card-title" style="text-align:center; padding-top:20px;">Resume</h3>
+                        <div class="text-center">
+                           <a href="https://drive.google.com/file/d/1IyH_z1yyq5OYPoilFfkrc3fICjvRNANq/view?usp=sharing" download="Prathyusha_Maddala_Resume.pdf" class="btn btn-primary" style="background-color:darkblue; color:white;">Download Resume</a>
+                        </div>
+                </section>
+
+                    
+        </div>
+    </div>
+</center>
+
+      
+
+    <!-- education code -->
+    <section class="education" id="edu">
+        <h3 class="card-title p-2" style="text-align:center; padding-top:20px;">About Me & Education details</h3>
+        <div class="about">
+            <div class="card mb-3" style="max-width:100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="D:\PLACEMENT_PREPARATION\picture.jpg" class="card-img" alt="..."
+                            style="height:350px; width: 300px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title" style="text-align:center; padding-top:10px">About Me</h3>
+                            <p class="card-text"
+                                style="font-family:Helvetica">Dedicated and results-oriented analyst with a strong foundation in both technical and interpersonal skills. 
+                                With a keen eye for detail and a commitment to excellence, I strive to make significant contributions to my organization's success and growth.
+                                 I am driven by a passion for continuous learning and a determination to achieve the best results in all my endeavors.</p>
+                            <p class="card-text"><span style="font-weight:bold">Skills:</span>HTML,CSS,JS,MySQL,python,Agile,microsoft azure,SDLC</p>
+                            <p class="card-text" style="font-family:cursive; padding-left:150px;">Tools Familiar: Visual studio code, jupyter Notebook, MS Office, Github, JIRA </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card">
+                <img src="https://ehr.meditech.com/themes/ehrmeditech/images/about/college-career-animation.gif"
+                    class="card-img-top" alt="..." height="230px">
+                <div class="card-body">
+                    <h5 class="card-title">Btech(Bachelor of Technology)</h5>
+                    <p class="card-text" style="font-family:Times New Roman">I am recent graduate at  <span
+                            style="font-weight:bold">Gandhi institute of Technology and Management(GITAM) </span> in the
+                        branch of Computer science and Engineering. Batch of 2020-2024</p>
+                    <p class="card-text" style="font-family:Times New Roman">I have secured <span
+                            style="font-weight:bold">8.77</span> out of <span style="font-weight:bold">10</span>
+                        CGPA</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://cdn.dribbble.com/users/2726/screenshots/3585374/comp_1_1.gif"
+                    class="card-img-top" alt="..." height="230px">
+                <div class="card-body">
+                    <h5 class="card-title">Board of Intermediate Education</h5>
+                    <p class="card-text" style="font-family:Times New Roman">I have completed my intermediate at <span
+                            style="font-weight:bold">Sri chaitanya jr college  </span> in the branch Maths,
+                        Physics, and Chemistry (MPC) in vizag . Batch of 2018-2020</p>
+                    <p class="card-text" style="font-family:Times New Roman">I have secured <span
+                          style="font-weight:bold">8.9</span> out of <span style="font-weight:bold">10</span>
+                        CGPA</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.sleepadvisor.org/wp-content/uploads/2020/01/Happy-Kids-in-front-of-School-Animation.gif"
+                    class="card-img-top" alt="..." height="230px">
+                <div class="card-body">
+                    <h5 class="card-title">Board of Secondary Education</h5>
+                    <p class="card-text" style="font-family:Times New Roman">I have completed my 10th standard at
+                        <span style="font-weight:bold">Sri chaitanya school </span> in vizag . Batch of 2017-2018</p>
+                    <p class="card-text" style="font-family:Times New Roman">I have secured <span
+                            style="font-weight:bold">9.8</span> out of <span style="font-weight:bold">10</span>
+                        CGPA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- project section -->
+    <section class="prodiscription" id=pro>
+        <h3 class="card-title"
+            style="text-align:center;background-color: rgb(192,192,192);padding-bottom:5px">My Project Details</h3>
+        <section>
+            <div class="card mb-3" style="max-width:100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="https://cdn.dribbble.com/users/846207/screenshots/9192312/office-desk-animation.gif"
+                            class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8" style="padding-top:25px">
+                        <div class="card-body">
+                            <h3 class="card-title"
+                                style="text-align:center; color:rgb(138, 43, 226)">My Projects</h3>
+                            <p class="card-text" style="font-family:Verdana"> My projects demonstrate proficiency in leveraging cutting-edge technologies such as Python, deep learning, web technologies,
+                                 and database management to address real-world challenges. 
+                                With a strong emphasis on accuracy, efficiency, and user experience, 
+                                each project showcases my ability to deliver impactful solutions that contribute to the growth and success of organizations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="realpro">
+            <div class="card-deck">
+                <!-- House Price Prediction Card -->
+                <div class="card">
+                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2FqOW5mY3d6OWllcGZuajhzcHE5MnBmaHdvMDMyenJnY2txdjNheiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/W1fFapmqgqEf8RJ9TQ/giphy.gif" class="card-img-top" alt="House Price Prediction" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight:bold">House_Price_Prediction</h5>
+                        <p class="card-text" style="font-family:Times New Roman">Predicts the pricing of houses.</p>
+                        <p class="card-text">Mobile & Laptop view </p>
+                        <p class="card-text"><span style="font-weight:bold">Technologies used</span>: Python, Data science</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/maddalaprathyusha/House_Price_Prediction.git" target="_blank" class="textfoot">Visit Github link</a>
+                    </div>
+                </div>
+        
+                <!-- Crime Project Card -->
+                <div class="card">
+                    <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTRrZG8zeGt3ZXVqcW1pd2x5aDU2MXQyNGZ0bGxibnRteGJoYm1pOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ox91VuRSYDxKkQF3zf/giphy.gif" class="card-img-top" alt="Crime Project" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight:bold">Crime_Project</h5>
+                        <p class="card-text" style="font-family:Times New Roman">Analyzes and predicts crime occurrences.</p>
+                        <p class="card-text">Mobile view & Laptop view</p>
+                        <p class="card-text"><span style="font-weight:bold">Technologies used</span>: python, web technologies, SQL, Visual studio code, Machine Learning algorithms, Github.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/maddalaprathyusha/Crime_occurence.git" target="_blank" class="textfoot">Visit Github link</a>
+                    </div>
+                </div>
+        
+                <!-- Iris Recognition Attendance System Card -->
+                <div class="card">
+                    <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmF1cTZtY3I3bTl5MzVuaTlvZ3NnOHNuZnVhMG5tNTY4MmdzNHFjdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/W4LZfFdr14eTC/giphy.gif" class="card-img-top" alt="Iris Recognition Attendance System" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight:bold">Iris_Recognition_Attendance_System</h5>
+                        <p class="card-text" style="font-family:Times New Roman">Iris-based recognition for attendance system.</p>
+                        <p class="card-text">Mobile view & Laptop view</p>
+                        <p class="card-text"><span style="font-weight:bold">Technologies used</span>: python libraries, Deep learning algorithms, Visual studio code, Github</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/maddalaprathyusha/Iris_recognition_attendance_sys.git" target="_blank" class="textfoot">Visit Github link</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+    <!--   get in touch section -->
+    <section class="contactform" id=cont>
+        <h1 class="get">Get in touch</h1>
+        <h1></h1>
+        <div class="container11">
+            <div class="left">
+                <img src="https://finwave.co/images/gif/Contact-1.gif" alt="Animated Image" class="image">
+            </div>
+            <div class="right">
+                <form action="" method="POST">
+                    <div class="form-group">
+                        <label class="card-title">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="card-title">Email:</label>
+                        <input type="text" id="em  <input type="text" id="email" name="email" placeholder="Your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="card-title">Message:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Type your message" required></textarea>
+                    </div>
+                    <button type="button" class="btn-send" onclick="fun()">Send</button>
+                </form>
+            </div>
+        </div>
+        <div>
+        </div>
+    </section>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("-SeCk6oqpE9ukX85a");
+        })();
+    </script>
+</body>
+
+</html> 
